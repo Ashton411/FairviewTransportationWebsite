@@ -290,6 +290,31 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .roblox-nav-btn:hover{background:#e5e5e5;transform:translateY(-1px)}
 .roblox-nav-btn svg rect{fill:#000}
 
+/* ── FOOTER ── */
+#site-footer{
+  background:var(--bg2);border-top:1px solid var(--border);
+  margin-top:4rem;
+}
+.footer-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;gap:3rem;justify-content:space-between;flex-wrap:wrap;
+  padding:2.5rem 2rem;
+}
+.footer-brand{flex:1;min-width:220px}
+.footer-links{display:flex;gap:2.5rem;flex-wrap:wrap}
+.footer-col{display:flex;flex-direction:column;gap:.5rem;min-width:120px}
+.footer-col-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:.25rem}
+.footer-col a{font-size:.82rem;color:var(--muted);transition:color .15s}
+.footer-col a:hover{color:var(--text)}
+.footer-bottom{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;
+  padding:.85rem 2rem;border-top:1px solid var(--border);
+  font-size:.75rem;color:var(--muted);
+}
+.footer-bottom a{color:var(--muted);transition:color .15s}
+.footer-bottom a:hover{color:var(--text)}
+
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
   .sidebar{display:none}
@@ -731,7 +756,160 @@ tr:hover td{background:rgba(255,255,255,.02)}
   </div>
 </div>
 
+<!-- ──────────────── PRIVACY POLICY PAGE ──────────────── -->
+<div id="page-privacy" class="page">
+  <div class="section" style="max-width:760px">
+    <div style="margin-bottom:2rem">
+      <button class="btn btn-ghost btn-sm" onclick="showPage('home')" style="margin-bottom:1.5rem">← Back</button>
+      <div class="hero-tag" style="margin-bottom:1rem">Legal</div>
+      <h1 style="font-family:var(--font-head);font-size:2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.5rem">Privacy Policy</h1>
+      <p style="color:var(--muted);font-size:.85rem">Last updated: January 1, 2025 &bull; Fairview Transportation Services</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">1. Information We Collect</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">When you sign in with Roblox, we collect your Roblox user ID, username, and display name via the Roblox OAuth 2.0 authentication service. We also collect your group rank within Fairview Transportation Services (Group ID: 6916222) to determine your access level on this portal. We do not collect passwords, email addresses, or any personal information beyond what Roblox provides through the OAuth flow.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">2. How We Use Your Information</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">Your Roblox identity is used solely to authenticate you on this portal and provide role-appropriate access to features such as staff shift logging, bus spawner controls, and development tools. Your username and user ID are stored in our Firebase database to associate shifts, applications, and developer sessions with your account. We do not sell, share, or distribute your information to any third parties.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">3. Data Storage</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">Data is stored securely using Google Firebase Firestore, hosted in the United States. This includes shift logs, staff applications, developer session records, bus spawn logs, and audit trail entries. Firebase enforces industry-standard encryption at rest and in transit. Only authorized administrators of Fairview Transportation Services have access to the Firebase console.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">4. Cookies & Local Storage</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">This portal uses browser <code style="background:var(--bg3);padding:.1rem .35rem;border-radius:4px;font-size:.8rem">localStorage</code> and <code style="background:var(--bg3);padding:.1rem .35rem;border-radius:4px;font-size:.8rem">sessionStorage</code> to retain your login session and portal settings between visits. No third-party tracking cookies are used. No advertising networks have access to this site.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">5. Roblox Platform</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">Authentication is handled through Roblox's official OAuth 2.0 service. By using "Login with Roblox," you are also subject to <a href="https://en.help.roblox.com/hc/en-us/articles/115004647846" target="_blank" style="color:var(--accent)">Roblox's Privacy Policy</a> and <a href="https://en.help.roblox.com/hc/en-us/articles/115004647846" target="_blank" style="color:var(--accent)">Terms of Use</a>. Fairview Transportation Services is a fan-made Roblox group and is not affiliated with or endorsed by Roblox Corporation.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">6. Data Deletion</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">You may request deletion of your data at any time by contacting a Fairview Transportation Services administrator through our official Discord server or by reaching out to the group owner on Roblox (User ID: 619219709). We will remove your records from our database within a reasonable timeframe.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">7. Changes to This Policy</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date at the top of this page. Continued use of the portal after changes constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <div class="alert alert-info">
+      Questions? Contact the group owner on Roblox or reach out through the FTS Discord server.
+    </div>
+  </div>
+</div>
+
+<!-- ──────────────── TERMS OF SERVICE PAGE ──────────────── -->
+<div id="page-terms" class="page">
+  <div class="section" style="max-width:760px">
+    <div style="margin-bottom:2rem">
+      <button class="btn btn-ghost btn-sm" onclick="showPage('home')" style="margin-bottom:1.5rem">← Back</button>
+      <div class="hero-tag" style="margin-bottom:1rem">Legal</div>
+      <h1 style="font-family:var(--font-head);font-size:2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.5rem">Terms of Service</h1>
+      <p style="color:var(--muted);font-size:.85rem">Last updated: January 1, 2025 &bull; Fairview Transportation Services</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">1. Acceptance of Terms</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">By accessing or using the Fairview Transportation Services staff portal ("the Portal"), you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the Portal. These terms apply to all visitors, members, and staff of Fairview Transportation Services.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">2. Eligibility & Access</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">The Portal is publicly viewable by anyone. Staff-only features — including shift logging, bus spawner access, developer tools, and administrative functions — are restricted to members of Fairview Transportation Services (Roblox Group ID: 6916222). Access to privileged features is determined by your rank within the group and is subject to change at the discretion of group leadership.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">3. Roblox Account Requirement</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">Signing in requires a valid Roblox account. You must comply with <a href="https://en.help.roblox.com/hc/en-us/articles/115004647846" target="_blank" style="color:var(--accent)">Roblox's Terms of Use</a> at all times. Accounts found to be in violation of Roblox's platform rules may be denied access to this Portal without notice.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">4. Acceptable Use</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">You agree not to misuse the Portal. Prohibited conduct includes but is not limited to: submitting false staff applications, logging fraudulent shifts, abusing the bus spawner to disrupt gameplay, attempting to access administrative features without authorization, or interfering with the Portal's technical infrastructure. Violations may result in immediate removal from the group and a permanent ban from the Portal.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">5. Staff Responsibilities</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">Staff members who use the Portal's shift logging, spawner, and development tools do so in an official capacity representing Fairview Transportation Services. Staff are expected to log hours honestly, use the bus spawner responsibly, and maintain professional conduct in all interactions associated with the group. Abuse of staff tools may result in demotion or removal.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">6. Intellectual Property</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">All content on this Portal, including bus models, liveries, development logs, and branding associated with Fairview Transportation Services, is the property of FTS and its respective creators. You may not reproduce, redistribute, or repurpose group assets without explicit written permission from FTS leadership.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">7. Disclaimers</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">Fairview Transportation Services is a fan-made Roblox group and is not affiliated with, endorsed by, or sponsored by Roblox Corporation. The Portal is provided "as is" without warranty of any kind. We make no guarantees regarding uptime, data retention, or feature availability. Group leadership reserves the right to modify, suspend, or discontinue the Portal at any time.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1.25rem">
+      <h3 style="font-family:var(--font-head);font-weight:700;margin-bottom:.75rem">8. Changes to Terms</h3>
+      <p style="font-size:.875rem;color:var(--light);line-height:1.8">These Terms of Service may be updated at any time. The "Last updated" date at the top of this page will reflect the most recent revision. Continued use of the Portal after any changes constitutes your acceptance of the new terms.</p>
+    </div>
+
+    <div class="alert alert-info">
+      Questions about these terms? Contact the group owner on Roblox or reach out through the FTS Discord server.
+    </div>
+  </div>
+</div>
+
 </div><!-- /main-app -->
+
+<!-- FOOTER -->
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.4rem">
+        <svg viewBox="0 0 32 32" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+          <rect x="1" y="6" width="21" height="15" rx="2"/>
+          <path d="M22 10h7l2 5v5h-9V10z"/>
+          <circle cx="7" cy="24" r="3"/>
+          <circle cx="25" cy="24" r="3"/>
+        </svg>
+        <span style="font-family:var(--font-head);font-weight:800;font-size:.95rem">Fairview Transportation Services</span>
+      </div>
+      <p style="font-size:.75rem;color:var(--muted);max-width:280px;line-height:1.6">A fan-made Roblox transit group. Not affiliated with or endorsed by Roblox Corporation.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <span class="footer-col-label">Portal</span>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('staff')">Staff Directory</a>
+        <a href="#" onclick="showPage('devlogs')">Dev Logs</a>
+        <a href="#" onclick="showPage('roadmap')">Roadmap</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Group</span>
+        <a href="https://www.roblox.com/groups/6916222" target="_blank">Roblox Group ↗</a>
+        <a href="#" onclick="showPage('spawner')">Bus Spawner</a>
+        <a href="#" onclick="showPage('premium')">Premium Buses</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Legal</span>
+        <a href="#" onclick="showPage('privacy')">Privacy Policy</a>
+        <a href="#" onclick="showPage('terms')">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 Fairview Transportation Services. All rights reserved.</span>
+    <span style="display:flex;gap:1.25rem">
+      <a href="#" onclick="showPage('privacy')">Privacy</a>
+      <a href="#" onclick="showPage('terms')">Terms</a>
+      <a href="https://www.roblox.com/groups/6916222" target="_blank">Group ID: 6916222</a>
+    </span>
+  </div>
+</footer>
 
 <!-- ════════════════════════════════════
      MODALS
@@ -1109,6 +1287,7 @@ function showPage(name) {
   document.getElementById('page-'+name).classList.add('active');
   const navEl = document.getElementById('nav-'+name);
   if (navEl) navEl.classList.add('active');
+  window.scrollTo({top:0, behavior:'smooth'});
 
   if (name==='staff') loadStaffDirectory();
   if (name==='devlogs') loadDevLogs();
