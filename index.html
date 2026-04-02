@@ -1007,9 +1007,12 @@ tr:hover td{background:rgba(255,255,255,.02)}
 // CONFIG — Edit these!
 // ────────────────────────────────────
 const FIREBASE_CONFIG = JSON.parse(localStorage.getItem('fts_firebase_config') || 'null') || {
-  // Paste your Firebase config here OR set it via Admin → Settings
-  apiKey: "", projectId: "", authDomain: "",
-  storageBucket: "", messagingSenderId: "", appId: ""
+  apiKey: "AIzaSyBblbtqAk_fgwiKa8SAerZ8T1UTibiaNRQ",
+  authDomain: "rbxguard-cab1c.firebaseapp.com",
+  projectId: "rbxguard-cab1c",
+  storageBucket: "rbxguard-cab1c.firebasestorage.app",
+  messagingSenderId: "758910848687",
+  appId: "1:758910848687:web:aa8dd94eaceb331d9e8e5a"
 };
 const ROBLOX_GROUP_ID = 6916222;
 const GROUP_NAME = "Fairview Transportation Services";
@@ -1063,14 +1066,9 @@ function initFirebase() {
 // AUTH
 // ────────────────────────────────────
 function startRobloxLogin() {
-  // Real Roblox OAuth — requires your app to be registered at create.roblox.com/credentials
-  // For now, open Roblox auth flow
-  const clientId = localStorage.getItem('fts_roblox_client_id') || '';
-  if (!clientId) {
-    toast('Roblox OAuth client ID not configured. Using demo mode.','info');
-    loginDemo();
-    return;
-  }
+  // Roblox OAuth — registered at create.roblox.com/credentials
+  // Token exchange (secret) must be handled by your Cloudflare Worker / backend
+  const clientId = '6362206231702135974';
   const redirect = encodeURIComponent(window.location.href.split('?')[0]);
   window.location.href = `https://apis.roblox.com/oauth/v1/authorize?client_id=${clientId}&redirect_uri=${redirect}&response_type=code&scope=openid+profile+group:read`;
 }
